@@ -4,5 +4,5 @@
     <key>COVERAGE_TYPE</key>
     <value>STATEMENT</value>
   </config>
-  <search-directory type="TESTABLE_SOURCE_DIR">$(ENVIRO_SEARCH_LIST_L1_RXTX)</search-directory>
+  <search-directory type="TESTABLE_SOURCE_DIR">src/L1_HAL_MODEL/</search-directory>
 </manage-config-options>
