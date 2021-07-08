@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="29">
+  <config>
+    <saved-logs>5</saved-logs>
+    <build-directory-naming-strategy>COMPRESSED</build-directory-naming-strategy>
+  </config>
+  <project-id>1625768706</project-id>
+  <factor-config-options>0</factor-config-options>
+  <environment name="L1_HAL_MODEL" type="UNIT">
+    <language>2</language>
+    <is-monitored>0</is-monitored>
+    <config>
+      <original-environment-directory>Docker_Demo/build/3459273118</original-environment-directory>
+    </config>
+  </environment>
+  <group name="Group">
+    <environment name="L1_HAL_MODEL"/>
+  </group>
+  <compiler>
+    <compiler>
+      <name>GNU_Native_Automatic_C++17</name>
+      <config>
+        <config>
+          <key>C_COMPILER_TAG</key>
+          <value>GNU_CPP17_X</value>
+        </config>
+      </config>
+    </compiler>
+    <testsuite name="TestSuite">
+      <group name="Group"/>
+    </testsuite>
+  </compiler>
+</project>
