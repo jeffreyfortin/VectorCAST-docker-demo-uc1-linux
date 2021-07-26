@@ -24,7 +24,7 @@
  */
 #define DEVICE_RESET	0x00000001
 #define TX_ACK  	0x00000002
-#define RX_ACK  	0x00000004
+#define RX_ACK  	0x00000005
 
 
 
