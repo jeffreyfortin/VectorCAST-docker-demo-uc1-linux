@@ -15,26 +15,26 @@ void comm_isr(void)
 		led_ctrl(TX_LED, GREEN );
 		tx_cnt++;
 	}
-	if (sts_reg & TX_ERROR)
+	else if (sts_reg & TX_ERROR)
 	{
 		*COMM_COMMAND_REG = *COMM_COMMAND_REG | TX_ACK;
 		led_ctrl(TX_LED, RED );
 	}
 
-	if (sts_reg & RX_DATA_RDY)
+	else if (sts_reg & RX_DATA_RDY)
 	{
 		post_msg(COMM_RX_BUFFER);
 		*COMM_COMMAND_REG = *COMM_COMMAND_REG | RX_ACK;
 		led_ctrl(RX_LED, GREEN );
 		rx_cnt++;
 	}
-	if (sts_reg & RX_ERROR)
+	else if (sts_reg & RX_ERROR)
 	{
 		*COMM_COMMAND_REG = *COMM_COMMAND_REG | RX_ACK;
 		led_ctrl(RX_LED, RED );
 	}
 
-	if (sts_reg & GENERAL_ERROR)
+	else if (sts_reg & GENERAL_ERROR)
 	{
 		*COMM_COMMAND_REG = *COMM_COMMAND_REG | DEVICE_RESET;
 		led_ctrl(RESET_LED, RED );
